@@ -61,7 +61,7 @@ export default function Home() {
         {/* Hero Image */}
         <div className="absolute inset-0">
           <img
-            src="/Caro_Img/Hero_img.jpg"
+            src="/images/Hero_img.jpg"
             alt="Premium Printing Services"
             className="w-full h-full object-cover object-center"
           />
