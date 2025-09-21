@@ -51,7 +51,7 @@ export default function AboutPage() {
           
           <div className="md:w-1/2 w-full">
             <div className="h-64 w-full relative rounded-lg overflow-hidden">
-              <Image src="/images/printer.jpg" alt="Printer" fill className="object-cover" />
+              <Image src="/image/printer.jpg" alt="Printer" fill className="object-cover" />
             </div>
           </div>
         </div>
@@ -64,8 +64,8 @@ export default function AboutPage() {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
-              { name: 'Muhammed shafeeq', role: 'Print Manager', img: '/shafeeq.jpg' },
-              { name: 'Muhammed fauzan', role: 'Prepress Specialist', img: '/fauzan.jpg' },
+              { name: 'Muhammed shafeeq', role: 'Print Manager', img: '/image/shafeeq.jpg' },
+              { name: 'Muhammed fauzan', role: 'Prepress Specialist', img: '/image/fauzan.jpg' },
             ].map((member) => (
               <div key={member.name} className="text-center p-4 bg-gray-50 rounded-lg">
                 <div className="w-20 h-20 mx-auto mb-4 relative">
