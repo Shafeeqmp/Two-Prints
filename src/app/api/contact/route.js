@@ -52,6 +52,10 @@ export async function POST(req){
             Phone:${phone}
             `,
         }
+        console.log("SMTP_USER:", process.env.SMTP_USER);
+console.log("SMTP_PASS exists:", !!process.env.SMTP_PASS);
+console.log("RECEIVER_EMAIL:", process.env.RECEIVER_EMAIL);
+
         await transporter.sendMail(mailOptions)
         return new Response(JSON.stringify({success:true}),{status:200})
     }catch(err){
