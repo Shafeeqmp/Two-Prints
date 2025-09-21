@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import Cardcomp from "./components/Card";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -60,10 +61,11 @@ export default function Home() {
 
         {/* Hero Image */}
         <div className="absolute inset-0">
-          <img
-            src="/images/Hero_img.jpg"
+          <Image
+            src="/image/Hero_img.jpg"
             alt="Premium Printing Services"
-            className="w-full h-full object-cover object-center"
+            fill
+            className="object-cover object-center"
           />
         </div>
 
@@ -212,7 +214,7 @@ export default function Home() {
             Ready to Elevate Your Print Projects?
           </h2>
           <p className="text-lg text-blue-100 mb-8 max-w-2xl mx-auto">
-            Let's collaborate to create something extraordinary. Get in touch for
+            Let&apos;s collaborate to create something extraordinary. Get in touch for
             a personalized consultation.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">

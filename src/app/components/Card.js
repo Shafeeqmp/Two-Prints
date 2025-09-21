@@ -7,7 +7,7 @@ export default function OffsetPrintingGallery() {
   const [cards] = useState([
     {
       id: 1,
-      img: "/images/Brochures.jpg",
+      img: "/image/Brochures.jpg",
       title: "Brochure Printing",
       desc: "High-quality brochure printing with vibrant colors and premium paper stock. Perfect for marketing materials.",
       features: ["4-color process", "Glossy/Matte finish", "Various sizes"],
@@ -16,7 +16,7 @@ export default function OffsetPrintingGallery() {
     },
     {
       id: 2,
-      img: "/images/card.jpg",
+      img: "/image/card.jpg",
       title: "Business Cards",
       desc: "Premium business card printing with spot UV, foil stamping, and embossing options.",
       features: ["Thick card stock", "Custom finishes", "Quick turnaround"],
@@ -25,7 +25,7 @@ export default function OffsetPrintingGallery() {
     },
     {
       id: 3,
-      img: "/images/catalog.jpeg",
+      img: "/image/catalog.jpeg",
       title: "Catalog Printing",
       desc: "Professional catalog printing for showcasing your products with high-resolution images.",
       features: ["Perfect binding", "Saddle stitching", "Layflat options"],
@@ -34,7 +34,7 @@ export default function OffsetPrintingGallery() {
     },
     {
       id: 4,
-      img: "/images/Poster-printing.jpg",
+      img: "/image/Poster-printing.jpg",
       title: "Poster Printing",
       desc: "Large format poster printing with brilliant colors and sharp details for events and promotions.",
       features: ["Large format", "Fade-resistant inks", "Mounting options"],
@@ -43,7 +43,7 @@ export default function OffsetPrintingGallery() {
     },
     {
       id: 5,
-      img: "/images/packaging.jpg",
+      img: "/image/packaging.jpg",
       title: "Packaging Printing",
       desc: "Custom packaging solutions with high-quality printing that makes your products stand out.",
       features: ["Custom die-cutting", "Structural design", "Prototype services"],
@@ -52,7 +52,7 @@ export default function OffsetPrintingGallery() {
     },
     {
       id: 6,
-      img: "/images/stickers.jpg",
+      img: "/image/stickers.jpg",
       title: "Stationery Sets",
       desc: "Elegant stationery printing for businesses including letterheads, envelopes, and notepads.",
       features: ["Matching designs", "Premium papers", "Foil detailing"],
