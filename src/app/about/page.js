@@ -65,7 +65,7 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
               { name: 'Muhammed shafeeq', role: 'Print Manager', img: '/image/shafeeq.jpg' },
-              { name: 'Muhammed fauzan', role: 'Prepress Specialist', img: '/image/fauzan.jpg' },
+              { name: 'Muhammed fauzan', role: 'Prepress Specialist', img: '/image/Fauzan.jpg' },
             ].map((member) => (
               <div key={member.name} className="text-center p-4 bg-gray-50 rounded-lg">
                 <div className="w-20 h-20 mx-auto mb-4 relative">

@@ -1,4 +1,4 @@
-
+export const runtime = "nodejs"
 import nodemailer from "nodemailer"
 export async function POST(req){
     try{
@@ -32,7 +32,9 @@ export async function POST(req){
       );
         }
         const transporter = nodemailer.createTransport({
-            service : "gmail",
+            host : "smtp.gmail.com",
+            port:465,
+            secure:true,
             auth:{
                 user:process.env.SMTP_USER,
                 pass:process.env.SMTP_PASS
