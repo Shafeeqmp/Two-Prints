@@ -21,7 +21,7 @@ export default function CustomFooter() {
           <div className="md:col-span-1">
             <FooterBrand
               href="/"
-              src="/logo.png"
+              src="/logo/logo.png"
               alt="Company Logo"
               name="TWO PRINTS"
               className="mb-4"

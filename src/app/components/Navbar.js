@@ -22,7 +22,7 @@ export default function Component() {
                 <div className="bg-gradient-to-r from-blue-500 to-purple-600 p-3 rounded-lg flex items-center justify-center">
                     {isMounted ? (
                         <Image 
-                            src="/logo.png" 
+                            src="/logo/logo.png" 
                             width={32}
                             height={32}
                             className="object-contain" 

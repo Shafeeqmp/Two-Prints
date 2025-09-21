@@ -44,14 +44,14 @@ export default function AboutPage() {
               </div>
             </div>
             
-            <Link href="/quote">
+            <Link href="/contact">
               <Button color="purple">Get a Free Quote</Button>
             </Link>
           </div>
           
           <div className="md:w-1/2 w-full">
             <div className="h-64 w-full relative rounded-lg overflow-hidden">
-              <Image src="/printer.jpg" alt="Printer" fill className="object-cover" />
+              <Image src="/images/printer.jpg" alt="Printer" fill className="object-cover" />
             </div>
           </div>
         </div>
