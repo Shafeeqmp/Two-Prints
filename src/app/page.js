@@ -1,4 +1,5 @@
 "use client";
+
 import { useState, useEffect } from "react";
 import Cardcomp from "./components/Card";
 import Link from "next/link";
@@ -57,7 +58,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative w-full h-[50vh] sm:h-[70vh] min-h-[300px] sm:min-h-[500px] overflow-hidden">
         {/* Dark overlay */}
-         <div className="absolute inset-0 bg-gradient-to-r from-gray-900/70 to-purple-900/50 z-10"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-gray-900/70 to-purple-900/50 z-10"></div>
 
         {/* Hero Image */}
         <div className="absolute inset-0">
@@ -66,6 +67,7 @@ export default function Home() {
             alt="Premium Printing Services"
             fill
             className="object-cover object-center"
+            priority
           />
         </div>
 
@@ -205,17 +207,17 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Custom Card Component */}
       <Cardcomp />
 
       {/* CTA Section */}
-      <section className="bg-black from-gray-900 to-blue-900 text-white py-16">
+      <section className="bg-black text-white py-16">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Ready to Elevate Your Print Projects?
           </h2>
           <p className="text-lg text-blue-100 mb-8 max-w-2xl mx-auto">
-            Let&apos;s collaborate to create something extraordinary. Get in touch for
-            a personalized consultation.
+            Let&apos;s collaborate to create something extraordinary. Get in touch for a personalized consultation.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Link href="/contact">

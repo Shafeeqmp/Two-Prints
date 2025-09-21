@@ -11,8 +11,6 @@ export default function OffsetPrintingGallery() {
       title: "Brochure Printing",
       desc: "High-quality brochure printing with vibrant colors and premium paper stock. Perfect for marketing materials.",
       features: ["4-color process", "Glossy/Matte finish", "Various sizes"],
-      width: 500,
-      height: 300
     },
     {
       id: 2,
@@ -20,8 +18,6 @@ export default function OffsetPrintingGallery() {
       title: "Business Cards",
       desc: "Premium business card printing with spot UV, foil stamping, and embossing options.",
       features: ["Thick card stock", "Custom finishes", "Quick turnaround"],
-      width: 500,
-      height: 300
     },
     {
       id: 3,
@@ -29,8 +25,6 @@ export default function OffsetPrintingGallery() {
       title: "Catalog Printing",
       desc: "Professional catalog printing for showcasing your products with high-resolution images.",
       features: ["Perfect binding", "Saddle stitching", "Layflat options"],
-      width: 500,
-      height: 300
     },
     {
       id: 4,
@@ -38,8 +32,6 @@ export default function OffsetPrintingGallery() {
       title: "Poster Printing",
       desc: "Large format poster printing with brilliant colors and sharp details for events and promotions.",
       features: ["Large format", "Fade-resistant inks", "Mounting options"],
-      width: 500,
-      height: 300
     },
     {
       id: 5,
@@ -47,8 +39,6 @@ export default function OffsetPrintingGallery() {
       title: "Packaging Printing",
       desc: "Custom packaging solutions with high-quality printing that makes your products stand out.",
       features: ["Custom die-cutting", "Structural design", "Prototype services"],
-      width: 500,
-      height: 300
     },
     {
       id: 6,
@@ -56,8 +46,6 @@ export default function OffsetPrintingGallery() {
       title: "Stationery Sets",
       desc: "Elegant stationery printing for businesses including letterheads, envelopes, and notepads.",
       features: ["Matching designs", "Premium papers", "Foil detailing"],
-      width: 500,
-      height: 300
     },
   ]);
 
@@ -79,15 +67,14 @@ export default function OffsetPrintingGallery() {
               key={card.id}
               className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
             >
-              {/* Image */}
+              {/* Image using fill */}
               <div className="relative h-56 overflow-hidden">
                 <Image
                   src={card.img}
                   alt={card.title}
-                  width={card.width}
-                  height={card.height}
+                  fill
                   className="object-cover transition-transform duration-500 hover:scale-105"
-                  priority={card.id <= 2} // Only prioritize first 2 images for better performance
+                  priority={card.id <= 2}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
                   <button className="w-full py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors">

@@ -66,13 +66,13 @@ export default function ContactPage() {
     <main className="min-h-screen bg-gray-50 text-gray-800">
       {/* Hero Section */}
       <section className="bg-purple-600 text-white py-16 text-center">
-        <div className="max-w-3xl mx-auto px-6">
-          <h1 className="text-4xl font-bold mb-4">Contact Two Prints</h1>
-         <p className="text-lg">
-           Have a question or a project in mind? We&apos;d love to hear from you.
-          </p>
-        </div>
-      </section>
+  <div className="max-w-3xl mx-auto px-6">
+    <h1 className="text-4xl font-bold mb-4">Contact Two Prints</h1>
+    <p className="text-lg">
+      Have a question or a project in mind? We&apos;d love to hear from you.
+    </p>
+  </div>
+</section>
 
       {/* Contact Details and Form */}
       <section className="max-w-6xl mx-auto px-6 py-12">
@@ -81,10 +81,10 @@ export default function ContactPage() {
           <div className="space-y-8">
             <h2 className="text-2xl font-bold">Get in Touch</h2>
             <p className="text-gray-600">
-              Whether you&apos;re looking for a quick quote, have a technical
-              question, or want to discuss a custom project, our team is ready
-              to help.
-            </p>
+            Whether you&apos;re looking for a quick quote, have a technical
+            question, or want to discuss a custom project, our team is ready
+            to help.
+          </p>
 
             {/* Info Blocks */}
             <div className="space-y-6">
