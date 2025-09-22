@@ -36,13 +36,13 @@ export async function POST(req){
             port:465,
             secure:true,
             auth:{
-                user:process.env.SMTP_USER,
-                pass:process.env.SMTP_PASS
+                user:process.env.VITE_SMTP_USER,
+                pass:process.env.VITE_SMTP_PASS
             }
         })
         const mailOptions ={
-            from:`"Two Prints"<${process.env.SMTP_USER}>`,
-            to:process.env.RECEIVER_EMAIL,
+            from:`"Two Prints"<${process.env.VITE_SMTP_USER}>`,
+            to:process.env.VITE_RECEIVER_EMAIL,
             subject:`New Contact From Submission:${subject}`,
             text:`
             Name:${name}
@@ -52,9 +52,9 @@ export async function POST(req){
             Phone:${phone}
             `,
         }
-        console.log("SMTP_USER:", process.env.SMTP_USER);
-console.log("SMTP_PASS exists:", !!process.env.SMTP_PASS);
-console.log("RECEIVER_EMAIL:", process.env.RECEIVER_EMAIL);
+        console.log("SMTP_USER:", process.env.VITE_SMTP_USER);
+        console.log("SMTP_PASS exists:", !!process.env.VITE_SMTP_PASS);
+        console.log("RECEIVER_EMAIL:", process.env.VITE_RECEIVER_EMAIL);
 
         await transporter.sendMail(mailOptions)
         return new Response(JSON.stringify({success:true}),{status:200})
