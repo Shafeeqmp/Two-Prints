@@ -17,7 +17,7 @@ export default function Component() {
     
     return (
         <Navbar fluid rounded className="bg-blue-100 dark:bg-gray-900 shadow-lg py-3 sticky top-0 z-50 border-b border-gray-200">
-            <NavbarBrand as={Link} href="#" className="flex items-center space-x-3 ml-2 md:ml-4">
+            <NavbarBrand as={Link} href="/" className="flex items-center space-x-3 ml-2 md:ml-4">
                 {/* Logo container with Next.js Image component */}
                 <div className="bg-gradient-to-r from-blue-500 to-purple-600 p-3 rounded-lg flex items-center justify-center">
                     {isMounted ? (
