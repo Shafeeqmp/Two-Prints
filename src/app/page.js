@@ -210,7 +210,6 @@ export default function Home() {
 
       {/* Custom Card Component */}
       <Cardcomp />
-
       {/* CTA Section */}
       <section className="bg-black text-white py-12 xs:py-16">
         <div className="max-w-4xl mx-auto px-4 text-center">

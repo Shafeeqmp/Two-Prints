@@ -46,7 +46,7 @@ export default function CustomFooter() {
               {["Home", "About", "Services", "Contact"].map((item) => (
                 <li key={item}>
                   <Link 
-                    href="#" 
+                    href="/" 
                     className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition-colors text-sm"
                   >
                     {item}
@@ -55,24 +55,6 @@ export default function CustomFooter() {
               ))}
             </ul>
           </div>
-
-          {/* Resources */}
-          <div>
-            <h3 className="text-sm font-semibold uppercase mb-4 dark:text-white">Resources</h3>
-            <ul className="space-y-3">
-              {["Documentation", "Tutorials", "Blog", "Support"].map((item) => (
-                <li key={item}>
-                  <Link 
-                    href="#" 
-                    className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition-colors text-sm"
-                  >
-                    {item}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
           {/* Contact */}
           <div>
             <h3 className="text-sm font-semibold uppercase mb-4 dark:text-white">Contact</h3>
@@ -105,14 +87,16 @@ export default function CustomFooter() {
 
         <div className="border-t border-gray-200 dark:border-gray-700 mt-8 pt-8">
           <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between">
+            <Link href={"https://tetratecno.vercel.app"}>
             <div className="text-gray-600 dark:text-gray-400 text-sm">
-              © {currentYear} Two Prints. All rights reserved.
+              © {currentYear} Two Prints. All rights reserved.Powered By Tetratecno Solutions
             </div>
+            </Link>
             <div className="mt-4 flex space-x-6 sm:mt-0">
               {["Privacy Policy", "Terms & Conditions", "Cookie Policy"].map((item) => (
                 <Link
                   key={item}
-                  href="#"
+                  href="/"
                   className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white text-sm transition-colors"
                 >
                   {item}

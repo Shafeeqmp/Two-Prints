@@ -3,6 +3,7 @@ import "./globals.css";
 import NavCompo from "./components/Navbar";
 import FooterCompo from "./components/Footer";
 import "flowbite/dist/flowbite.css";
+import WhatsAppLog from "./components/whatsAppLog";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -26,6 +27,7 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
           <NavCompo/>
         {children}
+        <WhatsAppLog/>
         <FooterCompo/>
       </body>
     </html>
